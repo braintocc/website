@@ -34,7 +34,7 @@ const HeaderView: React.FC = () => {
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
         <Spacer height={50} />
         <div className={styles.ButtonContainer}>
-          <a className={"button button--primary"}>Join The Waiting List</a>
+          <a className={"button button--primary"} href="#tally-open=mOPVGp&tally-layout=modal&tally-width=450&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave">Join The Waiting List</a>
         </div>
       </div>
       <Astronaut className={styles.AstronautImage} />
