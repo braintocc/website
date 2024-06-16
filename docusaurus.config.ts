@@ -67,11 +67,11 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/Brainto',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=500&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
+          label: 'Join Waiting List',
+          position: 'right',
+        },
       ],
     },
     footer: {
