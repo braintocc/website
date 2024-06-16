@@ -3,7 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HeaderTyper from '@site/src/components/HeaderTyper';
 import Spacer from '@site/src/components/Spacer';
 import styles from './styles.module.css';
-import Astronaut from '@site/src/components/Astronaut';
+import BrainToAnimated from '@site/static/img/brainto.svg';
 
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -21,7 +21,7 @@ const HeaderView: React.FC = () => {
       style={{ height: 700 }}>
       <div>
         <h1 className={styles.HeaderTitle}>
-          Online Systems Connections <span className={styles.SeparatorText}>Made</span>
+          Website Interconection <span className={styles.SeparatorText}>Made</span>
         </h1>
         <Spacer height={20} />
         <HeaderTyper
@@ -37,7 +37,7 @@ const HeaderView: React.FC = () => {
           <a className={"button button--primary"} href="#tally-open=mOPVGp&tally-layout=modal&tally-width=450&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave">Join The Waiting List</a>
         </div>
       </div>
-      <Astronaut className={styles.AstronautImage} />
+      <BrainToAnimated className={styles.BraintoImage}/>
     </div>
   );
 };
