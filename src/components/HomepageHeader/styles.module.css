@@ -57,6 +57,17 @@
   }
 }
 
+
+.HeaderTyper {
+  color: var(--ifm-navbar-link-color);
+  font-size: var(--ifm-font-size-64);
+  font-weight: bold;
+}
+
+.HeaderTyperCursor {
+  color: var(--ifm-navbar-link-active-color);
+}
+
 @media (max-width: 768px) {
   .Container {
     padding: 8rem 0 0 0;

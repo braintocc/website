@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HeaderTyper from '@site/src/components/HeaderTyper';
 import Spacer from '@site/src/components/Spacer';
 import styles from './styles.module.css';
 import BrainToAnimated from '@site/static/img/brainto.svg';
+import Typist from 'react-text-typist';
 
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -12,7 +12,6 @@ const HeaderView: React.FC = () => {
       'To Podcast Outlets',
       'To Video Outlets',
       'To Blogging Outlets',
-      'To Anything'
     ]);
 
   return (
@@ -23,14 +22,20 @@ const HeaderView: React.FC = () => {
         <h1 className={styles.HeaderTitle}>
           Your Knowledge Base <span className={styles.SeparatorText}>Connected</span>
         </h1>
-        <Spacer height={20} />
-        <HeaderTyper
+        <Spacer height={10} />
+        <Typist
           className={styles.HeaderTyper}
-          words={toTypeWords}
-          delay={5000}
-          defaultText={toTypeWords[0] || 'simple'}
-        />
-        <Spacer height={50} />
+          cursorClassName={styles.HeaderTyperCursor}  
+          sentences={toTypeWords} 
+          typingSpeed={200}
+          deletingSpeed={200}
+          pauseTime={2000}
+          startDelay={2000}
+          cursorSmooth={true}
+          loop={true}
+          defaultText={toTypeWords[0] || 'simple'} 
+          />
+        <Spacer height={20} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
         <Spacer height={50} />
         <div className={styles.ButtonContainer}>
