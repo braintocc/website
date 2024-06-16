@@ -31,9 +31,7 @@ const HeaderView: React.FC = () => {
           deletingSpeed={200}
           pauseTime={2000}
           startDelay={2000}
-          cursorSmooth={true}
-          loop={true}
-          defaultText={toTypeWords[0] || 'simple'} 
+          loop={false}
           />
         <Spacer height={20} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
