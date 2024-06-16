@@ -42,15 +42,6 @@
   flex-direction: row;
 }
 
-.GithubButton {
-  width: 200px;
-}
-
-.GetStartedButton {
-  width: 200px;
-  margin-right: 20px;
-}
-
 @media (max-width: 996px) {
   .BraintoImage {
     opacity: 0;
@@ -95,32 +86,7 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .Button {
-    color: var(--ifm-color-on-primary);
-    background-color: var(--ifm-color-primary);
   
-    border-radius: 3px;
-    border: none;
-  
-    font-size: var(--ifm-font-size-18);
-    font-weight: bold;
-  
-    cursor: pointer;
-  
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-  
-    transition: 0.3s ease all;
-  }
-  
-  .Button:hover {
-    background-color: var(--ifm-color-primary-lighter);
-  }
   .GetStartedButton {
     margin-right: 0;
     margin-bottom: 20px;
