@@ -8,10 +8,11 @@ import BrainToAnimated from '@site/static/img/brainto.svg';
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [toTypeWords] = useState([
-      'Social Media',
-      'Podcast Outlets',
-      'Video Outlets',
-      'Anything'
+      'To Social Media',
+      'To Podcast Outlets',
+      'To Video Outlets',
+      'To Blogging Outlets',
+      'To Anything'
     ]);
 
   return (
