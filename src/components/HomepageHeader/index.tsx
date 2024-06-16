@@ -8,11 +8,10 @@ import BrainToAnimated from '@site/static/img/brainto.svg';
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [toTypeWords] = useState([
-      'Simple',
-      'Straightforward',
-      'Transparent',
-      'Centralized',
-      'Fun',
+      'Social Media',
+      'Podcast Outlets',
+      'Video Outlets',
+      'Anything'
     ]);
 
   return (
@@ -21,7 +20,7 @@ const HeaderView: React.FC = () => {
       style={{ height: 700 }}>
       <div>
         <h1 className={styles.HeaderTitle}>
-          Website Interconection <span className={styles.SeparatorText}>Made</span>
+          Your Knowledge Base <span className={styles.SeparatorText}>Connected</span>
         </h1>
         <Spacer height={20} />
         <HeaderTyper
