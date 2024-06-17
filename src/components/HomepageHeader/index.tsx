@@ -4,6 +4,7 @@ import Spacer from '@site/src/components/Spacer';
 import styles from './styles.module.css';
 import BrainToAnimated from '@site/static/img/brainto.svg';
 import Typist from 'react-text-typist';
+import { TypeAnimation } from "react-type-animation";
 
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -23,15 +24,9 @@ const HeaderView: React.FC = () => {
           Your Knowledge Base <span className={styles.SeparatorText}>Connected</span>
         </h1>
         <Spacer height={10} />
-        <Typist
+        <TypeAnimation
           className={styles.HeaderTyper}
-          cursorClassName={styles.HeaderTyperCursor}  
-          sentences={toTypeWords} 
-          typingSpeed={200}
-          deletingSpeed={200}
-          pauseTime={2000}
-          startDelay={2000}
-          loop={false}
+          sequence={toTypeWords}
           />
         <Spacer height={20} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
