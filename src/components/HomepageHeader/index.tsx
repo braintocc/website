@@ -3,7 +3,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Spacer from '@site/src/components/Spacer';
 import styles from './styles.module.css';
 import BrainToAnimated from '@site/static/img/brainto.svg';
-import Typist from 'react-text-typist';
 import { TypeAnimation } from "react-type-animation";
 
 const HeaderView: React.FC = () => {
