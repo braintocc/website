@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://sun-hospitable-jasper.glitch.me
 media_folder: "static/img/blog"
-public_folder: "https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog"
+public_folder: "https://raw.githubusercontent.com/braintocc/website/main/static/img/blog"
 collections:
   - name: "blog-scheduler" # Used in routes, e.g., /admin/collections/blog
     label: "Blog Scheduler" # Used in the UI
@@ -14,6 +14,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Authors", name: "authors", widget: "hidden", default: "alvarolorentedev"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Organization", name: "organization_id", widget: "hidden", default: 9041}
       - label: "Tags"
         name: "tags"
         widget: "select"
@@ -137,6 +138,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Authors", name: "authors", widget: "hidden", default: "alvarolorentedev"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Organization", name: "organization_id", widget: "hidden", default: 9041}
       - label: "Tags"
         name: "tags"
         widget: "select"
