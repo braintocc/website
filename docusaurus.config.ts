@@ -77,15 +77,25 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Tutorial',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
+
+        {
+           title: 'Navigation',
+           items: [
+             {
+               label: 'Blog',
+               to: '/blog',
+             },
+           ],
+        },
+        {
+          title: 'Legal',
+          items:[
+            {
+              label: 'Privacy Policy',
+              to: 'privacy-policy'
+            }
+          ]
+        },
         // {
         //   title: 'Community',
         //   items: [
@@ -107,13 +117,9 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+               label: 'GitHub',
+               href: 'https://github.com/brainto',
             },
-            // {
-            //   label: 'GitHub',
-            //   href: 'https://github.com/brainto',
-            // },
           ],
         },
       ],
