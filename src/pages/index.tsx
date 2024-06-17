@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageHeader from '@site/src/components/HomepageHeader';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Head from '@docusaurus/Head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import StraightforwardView from '@site/src/components/StraightforwardView';
-import { ManageYour } from '@site/src/components/ManageYour';
 
 import Tweet from '@site/src/components/Tweet';
 import Tweets, {type TweetItem} from '@site/src/data/tweets';
@@ -15,11 +13,6 @@ import Tweets, {type TweetItem} from '@site/src/data/tweets';
 import Quotes from '@site/src/data/quotes';
 import clsx from 'clsx';
 import styles from './index.module.css';
-
-
-import Translate, {translate} from '@docusaurus/Translate';
-
-
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -80,7 +73,10 @@ function QuotesSection() {
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
 
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
