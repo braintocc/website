@@ -8,10 +8,10 @@ import { TypeAnimation } from "react-type-animation";
 const HeaderView: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
   const [toTypeWords] = useState([
-      'To Social Media',
-      'To Podcast Outlets',
-      'To Video Outlets',
-      'To Blogging Outlets',
+      'To Social Media', 2500,
+      'To Podcast Outlets', 2500,
+      'To Video Outlets', 2500,
+      'To Blogging Outlets', 2500,
     ]);
 
   return (
@@ -26,6 +26,7 @@ const HeaderView: React.FC = () => {
         <TypeAnimation
           className={styles.HeaderTyper}
           sequence={toTypeWords}
+          repeat={Infinity}
           />
         <Spacer height={20} />
         <p className={styles.DescriptionText}>{siteConfig.tagline}</p>
