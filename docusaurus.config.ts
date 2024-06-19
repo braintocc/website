@@ -2,6 +2,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+if (process.env.NODE_ENV === 'production') {
+  require('dotenv').config({ path: './.env.prod' })  
+}
+else //if environment is undefined - using swizzle
+    require('dotenv').config({ path: './.env.local' }) 
+
 const config: Config = {
   title: 'Brainto',
   tagline: 'connect your second brain to the world',
@@ -20,6 +26,17 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+
+  customFields: {
+    Auth0Domain: process.env.AUTH0_DOMAIN,
+    Auth0ClientId: process.env.AUTH0_CLIENT_ID,
+    auth0RedirectUri: process.env.AUTH0_REDIRECT_URI,
+    auth0Audience: process.env.AUTH0_AUDIENCE,
+    Auth0Scope: process.env.AUTH0_SCOPE,
+    BaseUrl: process.env.BASE_URL,
+    ServerUrl: process.env.SERVER_URL,
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -67,6 +84,11 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: '/social',
+          label: 'Social_secure',
+          position: 'left',
+        },
         {
           to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=500&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
           label: 'Join Waiting List',
