@@ -79,8 +79,8 @@ export default function Home(): JSX.Element {
   });
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Your knowledge base like notion connected to any service on social media, podcasting, blogging, newsletters and others">
       <Head>
       <script async src="https://tally.so/widgets/embed.js"></script>
       </Head>
