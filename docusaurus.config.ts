@@ -152,6 +152,13 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  scripts: [
+    
+    {
+      src: '/js/tawk.js',
+      async: false,
+    },
+  ],
 };
 
 export default config;
