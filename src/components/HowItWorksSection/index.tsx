@@ -14,13 +14,15 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import ConnectSvg from '@site/static/img/connect.svg';
 import NetworkSvg from '@site/static/img/network.svg';
 import WorkSvg from '@site/static/img/work.svg';
+import { useMediaQuery, useTheme } from '@mui/material';
 
 function CustomizedTimeline() {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
   return (
-    <Timeline position="alternate">
+    <Timeline position={matches ? "alternate": "right"}>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector />
           <TimelineDot  color="secondary">
             <PowerIcon />
           </TimelineDot>
@@ -30,7 +32,7 @@ function CustomizedTimeline() {
           <ConnectSvg className={styles.svg} />
           <Spacer height={20} />
           <Typography variant="h5" component="span">
-            provide access to brainto for the supported services
+            provide access to brainto in supported services
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -40,9 +42,9 @@ function CustomizedTimeline() {
           <TimelineDot color="secondary">
             <MapIcon />
           </TimelineDot>
-          <TimelineConnector />
+          <TimelineConnector  sx={{ bgcolor: 'secondary.main' }} />
         </TimelineSeparator>
-        <TimelineContent data-aos="fade-right">
+        <TimelineContent data-aos={matches ? "fade-right": "fade-left"}>
           <NetworkSvg className={styles.svg} />
           <Spacer height={20} />
           <Typography variant="h5" component="span">
@@ -56,7 +58,6 @@ function CustomizedTimeline() {
           <TimelineDot color="secondary">
             <LaptopIcon />
           </TimelineDot>
-          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent data-aos="fade-left">
           <WorkSvg className={styles.svg} />
