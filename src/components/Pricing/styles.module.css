@@ -26,7 +26,7 @@
 }
 
 .Tagline {
-  font-size: var(--ifm-font-size-28);
+  font-size: var(--ifm-font-size-36);
   color: var(--ifm-color-on-background-2);
   font-weight: bold;
 }

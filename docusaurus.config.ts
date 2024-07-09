@@ -90,7 +90,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=500&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0',
+          to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=300&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0&level=free',
           label: 'Join Waiting List',
           position: 'right',
         },

@@ -14,6 +14,7 @@ import Quotes from '@site/src/data/quotes';
 import clsx from 'clsx';
 import styles from './index.module.css';
 import HowItWorksSection from '../components/HowItWorksSection';
+import Pricing from '../components/Pricing';
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -89,6 +90,7 @@ export default function Home(): JSX.Element {
       <main>
         <StraightforwardView />
         <HowItWorksSection />
+        <Pricing />
         <TweetsSection />
         <QuotesSection />
       </main>
