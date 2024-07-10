@@ -26,18 +26,6 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-
-  customFields: {
-    Auth0Domain: process.env.AUTH0_DOMAIN,
-    Auth0ClientId: process.env.AUTH0_CLIENT_ID,
-    auth0RedirectUri: process.env.AUTH0_REDIRECT_URI,
-    auth0Audience: process.env.AUTH0_AUDIENCE,
-    Auth0Scope: process.env.AUTH0_SCOPE,
-    BaseUrl: process.env.BASE_URL,
-    ServerUrl: process.env.SERVER_URL,
-  },
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -85,13 +73,13 @@ const config: Config = {
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: '/social',
-          label: 'Social_secure',
-          position: 'left',
-        },
-        {
           to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=300&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0&level=free',
           label: 'Join Waiting List',
+          position: 'right',
+        },
+        {
+          href: process.env.APP_REDIRECT_URI,
+          label: 'Login',
           position: 'right',
         },
       ],
