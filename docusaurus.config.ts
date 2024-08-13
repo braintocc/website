@@ -8,9 +8,16 @@ if (process.env.NODE_ENV === 'production') {
 else //if environment is undefined - using swizzle
     require('dotenv').config({ path: './.env.local' }) 
 
+function getSiteTagline() {
+  switch(process.env.DOCUSAURUS_CURRENT_LOCALE) {
+    case "es": return 'conecta tu segundo cerebro al mundo';
+    default: return 'connect your second brain to the world';
+  }
+}
+
 const config: Config = {
   title: 'Brainto',
-  tagline: 'connect your second brain to the world',
+  tagline: getSiteTagline(),
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -31,7 +38,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','es'],
   },
 
   presets: [
@@ -72,6 +79,10 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           to: '#tally-open=mOPVGp&tally-layout=modal&tally-width=300&tally-hide-title=1&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=0&level=free',
           label: 'Join Waiting List',

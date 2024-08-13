@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Brainto",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Brainto Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Join Waiting List": {
+    "message": "Unete a la Lista de Espera",
+    "description": "Navbar item with label Join Waiting List"
+  },
+  "item.label.Login": {
+    "message": "Entrar",
+    "description": "Navbar item with label Login"
+  }
+}

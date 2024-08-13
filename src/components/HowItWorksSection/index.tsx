@@ -15,6 +15,8 @@ import ConnectSvg from '@site/static/img/connect.svg';
 import NetworkSvg from '@site/static/img/network.svg';
 import WorkSvg from '@site/static/img/work.svg';
 import { useMediaQuery, useTheme } from '@mui/material';
+import Translate from '@docusaurus/Translate';
+
 
 function CustomizedTimeline() {
   const theme = useTheme();
@@ -32,7 +34,10 @@ function CustomizedTimeline() {
           <ConnectSvg className={styles.svg} />
           <Spacer height={20} />
           <Typography variant="h5" component="span">
+          <Translate
+            id='site.howItWorks.step1'>
             provide access to brainto in supported services
+          </Translate>
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -48,7 +53,10 @@ function CustomizedTimeline() {
           <NetworkSvg className={styles.svg} />
           <Spacer height={20} />
           <Typography variant="h5" component="span">
-            Map what you want to connect & let us do the hard work
+            <Translate
+              id='site.howItWorks.step2'>
+              Map what you want to connect & let us do the hard work
+            </Translate>
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -63,7 +71,10 @@ function CustomizedTimeline() {
           <WorkSvg className={styles.svg} />
           <Spacer height={20} />
           <Typography variant="h5" component="span">
-            Continue doing what you know best in the system you know best
+            <Translate
+              id='site.howItWorks.step3'>
+              Continue doing what you know best in the system you know best
+            </Translate>
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -76,7 +87,7 @@ const HowItWorksSection: React.FC = () => {
     <div className={styles.Container} >
       <div className={styles.Content} >
         <div className={styles.HeaderContainer} data-aos="flip-left" data-aos-duration="1000">
-          <h3 className={styles.Tagline}>How it works?</h3>
+          <h3 className={styles.Tagline}><Translate id='site.howItWorks.title'>How it works?</Translate></h3>
           <Spacer height={20} />
         </div>
       </div>

@@ -15,6 +15,7 @@ import clsx from 'clsx';
 import styles from './index.module.css';
 import HowItWorksSection from '../components/HowItWorksSection';
 import Pricing from '../components/Pricing';
+import Translate from '@docusaurus/Translate';
 
 function TweetsSection() {
   const tweetColumns: TweetItem[][] = [[], [], []];
@@ -26,7 +27,7 @@ function TweetsSection() {
     <div className={clsx(styles.section)}>
       <div className="container">
         <div as="h2" className={clsx('margin-bottom--lg', 'text--center')}>
-        <h1>Loved By Content Creators</h1>
+        <h1><Translate id="site.tweet.title">Loved By Content Creators</Translate></h1>
         </div>
         <div className={clsx('row', styles.tweetsSection)}>
           {tweetColumns.map((tweetItems, i) => (
