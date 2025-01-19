@@ -1,47 +1,20 @@
 ---
 sidebar_position: 1
+
 ---
+# Welcome
 
-# Tutorial Intro
+Welcome to the Brainto user guide! This guide shows you how to get started on using your second brain to schedule actions on the wider internet.
 
-Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## What is Brainto?
 
-Get started by **creating a new site**.
+Brainto is a scheduler that allows you to centralize your live in your second brain platform (like Notion), and integrate with other services around the internet.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Is Brainto for me?
 
-### What you'll need
+If you use more than one service online and tend to have to multitask and visit things all around the web and want to focus better on value and not the process, I would say this is a tool for you.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Ready to get started?
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Visit the [page](https://www.brainto.cc/) and [its repo](https://github.com/braintocc/service) and start exploring.

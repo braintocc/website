@@ -28,7 +28,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'brainto', // Usually your GitHub org/user name.
+  organizationName: 'braintocc', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -72,15 +72,20 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
+        {
+           type: 'docSidebar',
+           sidebarId: 'tutorialSidebar',
+           position: 'left',
+           label: 'Tutorial',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'localeDropdown',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/braintocc',
+          label: 'GitHub',
           position: 'right',
         },
         {
@@ -139,7 +144,7 @@ const config: Config = {
           items: [
             {
                label: 'GitHub',
-               href: 'https://github.com/brainto',
+               href: 'https://github.com/braintocc',
             },
           ],
         },
